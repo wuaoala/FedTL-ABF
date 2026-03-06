@@ -197,7 +197,7 @@ if __name__ == "__main__":
     # 定义随机种子
     torch.manual_seed(11)
     # load credit data
-    dataset_name = "Ant"
+    dataset_name = "HMEQ"
     data_fea, data_labels, X_train, X_test, Y_train, Y_test = load_data(dataset_name)
     pre_epochs = 1
     epochs = 50
@@ -387,3 +387,4 @@ if __name__ == "__main__":
     print(np.round((auc_pr_epoch_1 + auc_pr_epoch_2) / 2, 4))
     print(np.round((ks_epoch_1 + ks_epoch_2) / 2, 4))
     print(np.round((bs_plus_1 + bs_plus_2) / 2, 4))
+
